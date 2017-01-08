@@ -1,0 +1,36 @@
+<!--<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+-->
+<ion-content padding>
+  <ion-input type="text" center placeholder="Dial number..." [(ngModel)]="dialedNumber"></ion-input> <ion-icon name="backspace"></ion-icon>
+
+  <ion-row>
+    <ion-col width-33><button ion-button full large (click)="dial(1)">1</button></ion-col>
+    <ion-col width-33><button ion-button full large (click)="dial(2)">2</button></ion-col>
+    <ion-col width-33><button ion-button full large (click)="dial(3)">3</button></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col width-33><button ion-button full large (click)="dial(4)">4</button></ion-col>
+    <ion-col width-33><button ion-button full large (click)="dial(5)">5</button></ion-col>
+    <ion-col width-33><button ion-button full large (click)="dial(6)">6</button></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col width-33><button ion-button full large (click)="dial(7)">7</button></ion-col>
+    <ion-col width-33><button ion-button full large (click)="dial(8)">8</button></ion-col>
+    <ion-col width-33><button ion-button full large (click)="dial(9)">9</button></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col width-33><button ion-button full large (click)="dial('*')">*</button></ion-col>
+    <ion-col width-33><button ion-button full large (click)="dial(0)">0</button></ion-col>
+    <ion-col width-33><button ion-button full large (click)="dial('#')">#</button></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col width-70><button ion-button full large (click)="makeCall()" color="secondary"><ion-icon name="call"></ion-icon>  </button></ion-col>
+    
+  </ion-row>
+</ion-content>
