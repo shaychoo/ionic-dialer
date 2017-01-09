@@ -1,18 +1,19 @@
-<ion-header>
+<!--<ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header>-->
 
 <ion-content>
+  <ion-input type="text" placeholder="Search..."  (input)="getContacts($event.target.value)" > </ion-input>
+  <ion-spinner *ngIf="isLoading" ion-center large ></ion-spinner>
   <ion-list>
-    <ion-list-header>Contacts List</ion-list-header>
-    <ion-item *ngFor="let c of contacts">
-      <ion-icon name="phone" item-left></ion-icon>
+    <ion-item *ngFor="let c of contacts" (click)="dial(c)">
+      <ion-icon name="call" item-left></ion-icon>
       {{c.displayName}}
     </ion-item>
   </ion-list>
-
+{{contacts | json}}
 </ion-content>
