@@ -6,6 +6,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { DialerPage } from '../pages/dialer/dialer';
 import { TabsPage } from '../pages/tabs/tabs';
+import { Contacts } from 'ionic-native';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     HomePage,
     DialerPage,
     TabsPage
+
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},Contacts]
 })
 export class AppModule {}

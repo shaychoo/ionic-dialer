@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, style } from '@angular/core';
 import {CallNumber} from 'ionic-native';
 import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-dialer',
-  templateUrl: 'dialer.html'
+  templateUrl: 'dialer.html',
 })
 export class DialerPage {
 
