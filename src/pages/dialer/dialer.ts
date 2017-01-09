@@ -13,6 +13,10 @@ export class DialerPage {
   constructor(public navCtrl: NavController) {
     
   }
+  delete(){
+
+    this.dialedNumber = this.dialedNumber.substring(0,this.dialedNumber.length-1)
+  }
 
   dial(num:string){
     this.dialedNumber = this.dialedNumber +  num;

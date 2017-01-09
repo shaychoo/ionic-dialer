@@ -7,7 +7,11 @@
 </ion-header>
 -->
 <ion-content padding>
-  <ion-input type="text" center placeholder="Dial number..." [(ngModel)]="dialedNumber"></ion-input> <ion-icon name="backspace"></ion-icon>
+  <ion-row> 
+    <ion-col width-90><ion-input type="text" center placeholder="Dial number..." [(ngModel)]="dialedNumber"></ion-input></ion-col>
+    <ion-col width-10> <button ion-button full large (click)="delete()"> <ion-icon name="backspace"></ion-icon></button> </ion-col>
+  </ion-row>
+  
 
   <ion-row>
     <ion-col width-33><button ion-button full large (click)="dial(1)">1</button></ion-col>
